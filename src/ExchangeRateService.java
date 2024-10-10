@@ -27,7 +27,7 @@ public class ExchangeRateService {
                     .fromJson(response.body(), ExchangeRate.class);
 
         } catch (IOException | InterruptedException e) {
-            throw new RuntimeException("Não consegui buscar as taxas de câmbio.");
+            throw new RuntimeException("Não consegui buscar as taxas de câmbio convertidas.");
         }
 
     }
