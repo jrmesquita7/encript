@@ -22,6 +22,7 @@ public class Main {
                     6) Peso Colombiano =>> Dólar
                     7) Sair
                     Escolha uma opção válida:
+                    *********************************************
                     """);
             opcao = leitura.nextInt();
 
