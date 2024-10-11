@@ -1,11 +1,11 @@
 ```markdown
-##Conversor de Moedas API
+# Conversor de Moedas API
 
 Este é um projeto de Conversor de Moedas que utiliza a API da [ExchangeRate-API](https://www.exchangerate-api.com/)
 para obter taxas de câmbio e converter valores entre diferentes moedas. O projeto está implementado em **Java** e
 utiliza o cliente HTTP nativo (`HttpClient`) e a biblioteca **Gson** para trabalhar com JSON.
 
-##Funcionalidades
+# Funcionalidades
 
 - Consultar as taxas de câmbio de diversas moedas.
 - Converter valores de uma moeda para outra com base nas taxas mais recentes.
@@ -13,19 +13,19 @@ utiliza o cliente HTTP nativo (`HttpClient`) e a biblioteca **Gson** para trabal
 
 # Tecnologias Utilizadas
 
-- Java 11+** (ou versões mais recentes)
-- HttpClient** para requisições HTTP.
+- Java 11+ (ou versões mais recentes)
+- HttpClient para requisições HTTP.
 - Gson** para manipulação de JSON.
-- ExchangeRate-API** para obter as taxas de câmbio.
+- ExchangeRate-API para obter as taxas de câmbio.
 
-##Pré-requisitos
+# Pré-requisitos
 
 Antes de executar o projeto, certifique-se de ter as seguintes ferramentas instaladas:
 
 - [Java JDK 11+](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - [Maven](https://maven.apache.org/) (opcional, se você usar Maven para gerenciamento de dependências)
 
-## Configuração
+# Configuração
 
 1. Clone o repositório:
 
