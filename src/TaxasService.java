@@ -5,6 +5,7 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Properties;
 import com.google.gson.Gson;
@@ -56,15 +57,29 @@ public class TaxasService {
 
     // Método para realizar a conversão de moedas
     public double converter(String base, String target, double valor, Taxas rates) {
-        validarMoeda(target, rates);
-        double taxaConversao = rates.getConversion_rates().get(target);
-        String registro = criarRegistroConversao(valor, base, target, taxaConversao);
-        historico.add(registro);
-        registrarLog(registro);
+        double taxaConversao = 0;
+
+        try{
+            validarMoeda(target, rates);
+        }catch (IllegalArgumentException | InputMismatchException e){
+            System.out.println("Moeda não disponivel no momento ou valor inválido digitado " + e);
+        }
+
+        try {
+            taxaConversao = rates.getConversion_rates().get(target);
+            String registro = criarRegistroConversao(valor, base, target, taxaConversao);
+            historico.add(registro);
+            registrarLog(registro);
+
+        }catch (NullPointerException e){
+            System.out.println("Houve um erro ao digitar o valor");
+        }
+
         return valor * taxaConversao;
     }
 
     private void validarMoeda(String target, Taxas rates) {
+
         if (!rates.getConversion_rates().containsKey(target)) {
             throw new IllegalArgumentException("Moeda de conversão não disponível.");
         }
