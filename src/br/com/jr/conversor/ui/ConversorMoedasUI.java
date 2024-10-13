@@ -39,6 +39,8 @@ public class ConversorMoedasUI extends JFrame {
 
         JButton buttonConverter = new JButton("Converter");
 
+        JButton button = new JButton("Sair");
+
         // Usando BorderLayout para a janela principal
         setLayout(new BorderLayout());
 

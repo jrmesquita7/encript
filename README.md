@@ -172,6 +172,18 @@ Valor: 100,00 em BRL convertido para 16,38 em EUR 2024-10-12 11-24-57
 Histórico gerado 2024-10-12 11-25-18
 ```
 
+Para uma experiência diferente no diretóro root/ui/ a class ConversorMoedasUI
+trás uma interface grafica para melhor funcionamento
+Essas foram as bibliotecas utilizadas 
+
+```
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+```
+![img.png](img.png)
+
 ## Contribuições
 
 Contribuições são bem-vindas! Se você deseja melhorar o projeto, sinta-se à vontade para abrir uma _issue_ ou fazer um _fork_ do repositório e enviar um _pull request_.

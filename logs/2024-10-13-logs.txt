@@ -4,3 +4,4 @@ Valor: 100,00 em BRL convertido para 17,92 em USD 2024-10-13 09-08-52
 Valor: 100,00 em BRL convertido para 2670,24 em JPY 2024-10-13 09-10-31
 Valor: 100,00 em USD convertido para 773,46 em GTQ 2024-10-13 09-17-10
 Valor: 100,00 em USD convertido para 14906,87 em JPY 2024-10-13 09-41-36
+Valor: 1,00 em USD convertido para 5,58 em BRL 2024-10-13 15-09-26
