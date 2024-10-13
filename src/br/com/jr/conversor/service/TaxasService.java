@@ -1,3 +1,5 @@
+package br.com.jr.conversor.service;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URI;
@@ -8,6 +10,8 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Properties;
+
+import br.com.jr.conversor.util.Log;
 import com.google.gson.Gson;
 
 public class TaxasService {
@@ -15,7 +19,7 @@ public class TaxasService {
     private String apiKey;
     private Properties properties = new Properties();
     private List<String> historico = new ArrayList<>();
-    private Log log = new Log(); // Mover Log para ser um atributo
+    private Log log = new Log(); // Mover br.com.jr.conversor.util.Log para ser um atributo
 
     // Construtor que carrega API_KEY
     public TaxasService() {

@@ -1,3 +1,8 @@
+package br.com.jr.conversor.service;
+
+import br.com.jr.conversor.menu.Menu;
+import br.com.jr.conversor.util.Log;
+
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;

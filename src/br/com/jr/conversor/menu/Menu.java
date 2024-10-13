@@ -1,3 +1,8 @@
+package br.com.jr.conversor.menu;
+
+import br.com.jr.conversor.service.Taxas;
+import br.com.jr.conversor.service.TaxasService;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

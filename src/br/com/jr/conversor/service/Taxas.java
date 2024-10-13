@@ -1,3 +1,5 @@
+package br.com.jr.conversor.service;
+
 import java.util.Map;
 
 public class Taxas {

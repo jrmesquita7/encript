@@ -51,16 +51,19 @@ echo "config.properties" >> .gitignore
 
 ```bash
 javac -d out src/*.java
-java -cp out Main
+java -cp out br.com.jr.conversor.main.Main
 ```
 
 ## Exemplos de Uso
 
-### Consulta de Taxas de Câmbio
+### Consulta de br.com.jr.conversor.service.Taxas de Câmbio
 
 Você pode usar o serviço para buscar taxas de câmbio com base em uma moeda de origem:
 
 ```java
+import br.com.jr.conversor.service.Taxas;
+import br.com.jr.conversor.service.TaxasService;
+
 TaxasService taxasService = new TaxasService();
 Taxas taxas = taxasService.conversao("USD"); // Exemplo: USD para outras moedas
 ```
@@ -80,7 +83,7 @@ Exemplo de output:
 Valor convertido: 550.48 BRL
 ```
 
-### Menu Interativo
+### br.com.jr.conversor.menu.Menu Interativo
 
 O projeto inclui uma interface de menu interativa que permite ao usuário selecionar moedas e realizar conversões diretamente do terminal:
 
