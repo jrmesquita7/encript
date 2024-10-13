@@ -173,7 +173,7 @@ Histórico gerado 2024-10-12 11-25-18
 ```
 
 Para uma experiência diferente no diretório root/ui/ a class ConversorMoedasUI
-trás uma interface grafica para melhor funcionamento
+trás uma interface grafica para melhor o funcionamento,
 Essas foram as bibliotecas utilizadas 
 
 ```
