@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.InputMismatchException;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -8,6 +9,7 @@ public class Main {
         put("ARS", "Peso Argentino");
         put("BRL", "Real Brasileiro");
         put("COP", "Peso Colombiano");
+        put("JPY", "Iene Japonês");
     }};
 
     public static void main(String[] args) {
@@ -16,7 +18,16 @@ public class Main {
 
         while (true) {
             exibirMenu();
-            int opcao = leitura.nextInt();
+            int opcao = 0;
+
+            try{
+                opcao = leitura.nextInt();
+            }catch (InputMismatchException e){
+                System.out.println("Opção inválida. Por favor, insira um número.");
+                leitura.nextLine();
+                continue;
+            }
+
 
             if (opcao == 9) {
                 System.out.println("Até logo !!");
@@ -27,7 +38,12 @@ public class Main {
 
             if (opcao != 7 && opcao != 8) {
                 System.out.println("Digite o valor a ser convertido:");
-                valor = leitura.nextDouble();
+                try{
+                    valor = leitura.nextDouble();
+                }catch (InputMismatchException e){
+                    System.out.println("Valor inválido");
+                }
+
             }
 
             processarOpcao(opcao, valor, taxasService, leitura);
@@ -70,7 +86,12 @@ public class Main {
                 base = escolherMoeda(leitura, "Qual moeda será a base?").toUpperCase();
                 target = escolherMoeda(leitura, "Para qual moeda será a conversão?").toUpperCase();
                 System.out.println("Digite o valor da conversão:");
-                valor = leitura.nextDouble();
+                try{
+                    valor = leitura.nextDouble();
+                }catch (InputMismatchException e){
+                    System.out.println("Valor inválido");
+                }
+
 
                 realizarConversao(base, target, valor, taxasService);
                 return;

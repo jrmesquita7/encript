@@ -36,3 +36,11 @@ Valor: 100,00 em USD convertido para 97942,00 em ARS 2024-10-12 11-24-01
 Valor: 1000,00 em ARS convertido para 1,02 em USD 2024-10-12 11-24-20
 Valor: 100,00 em BRL convertido para 16,38 em EUR 2024-10-12 11-24-57
 Histórico gerado 2024-10-12 11-25-18
+Valor: 8000,00 em JPY convertido para 299,60 em BRL 2024-10-12 21-53-56
+Valor: 0,00 em BRL convertido para 0,00 em JPY 2024-10-12 22-15-14
+Valor: 1,00 em BRL convertido para 26,70 em JPY 2024-10-12 22-21-35
+Valor: 1,00 em BRL convertido para 26,70 em JPY 2024-10-12 22-22-52
+Histórico gerado 2024-10-12 22-23-27
+Valor: 0,00 em ARS convertido para 0,00 em USD 2024-10-12 22-25-00
+Valor: 0,00 em COP convertido para 0,00 em USD 2024-10-12 22-25-09
+Valor: 100,00 em BRL convertido para 2670,24 em JPY 2024-10-12 22-28-40

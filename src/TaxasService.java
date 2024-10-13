@@ -80,7 +80,7 @@ public class TaxasService {
 
     private void validarMoeda(String target, Taxas rates) {
 
-        if (!rates.getConversion_rates().containsKey(target)) {
+        if (rates == null || rates.getConversion_rates() == null) {
             throw new IllegalArgumentException("Moeda de conversão não disponível.");
         }
     }
