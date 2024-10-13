@@ -52,3 +52,5 @@ Valor: 0,00 em COP convertido para 0,00 em USD 2024-10-12 22-53-04
 Opção inválida. Por favor, insira um número. - Detalhes: null 2024-10-12 22-53-04
 Moeda de conversão não disponível. 2024-10-12 22-53-15
 Histórico gerado 2024-10-12 22-53-22
+Valor: 10,00 em BRL convertido para 1,79 em USD 2024-10-12 23-15-57
+Valor: 500,00 em BRL convertido para 13351,20 em JPY 2024-10-12 23-16-14
