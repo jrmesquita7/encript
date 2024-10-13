@@ -44,3 +44,11 @@ Histórico gerado 2024-10-12 22-23-27
 Valor: 0,00 em ARS convertido para 0,00 em USD 2024-10-12 22-25-00
 Valor: 0,00 em COP convertido para 0,00 em USD 2024-10-12 22-25-09
 Valor: 100,00 em BRL convertido para 2670,24 em JPY 2024-10-12 22-28-40
+Valor inválido - Detalhes: null 2024-10-12 22-52-56
+Valor: 0,00 em BRL convertido para 0,00 em USD 2024-10-12 22-52-57
+Opção inválida. Por favor, insira um número. - Detalhes: null 2024-10-12 22-52-57
+Valor inválido - Detalhes: null 2024-10-12 22-53-04
+Valor: 0,00 em COP convertido para 0,00 em USD 2024-10-12 22-53-04
+Opção inválida. Por favor, insira um número. - Detalhes: null 2024-10-12 22-53-04
+Moeda de conversão não disponível. 2024-10-12 22-53-15
+Histórico gerado 2024-10-12 22-53-22

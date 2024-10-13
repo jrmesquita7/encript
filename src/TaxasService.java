@@ -27,9 +27,12 @@ public class TaxasService {
             properties.load(input);
             apiKey = properties.getProperty("API_KEY");
             if (apiKey == null || apiKey.isEmpty()) {
-                throw new RuntimeException("API_KEY não encontrada no arquivo config.properties");
+                String retorno = "API_KEY não encontrada no arquivo config.properties";
+                registrarLog(retorno);
+                throw new RuntimeException(retorno);
             }
         } catch (IOException e) {
+            registrarLog(String.valueOf(e));
             throw new RuntimeException(e);
         }
     }
@@ -51,6 +54,7 @@ public class TaxasService {
                     .fromJson(response
                             .body(), Taxas.class);
         } catch (IOException | InterruptedException e) {
+            registrarLog(String.valueOf(e));
             throw new RuntimeException("Não consegui buscar as taxas de câmbio convertidas.", e);
         }
     }
@@ -81,18 +85,23 @@ public class TaxasService {
     private void validarMoeda(String target, Taxas rates) {
 
         if (rates == null || rates.getConversion_rates() == null) {
-            throw new IllegalArgumentException("Moeda de conversão não disponível.");
+            String retorno = "Moeda de conversão não disponível.";
+            registrarLog(retorno);
+            throw new IllegalArgumentException(retorno);
         }
     }
 
-    private String criarRegistroConversao(double valor, String base, String target, double taxaConversao) {
-        return String.format("Valor: %.2f em %s convertido para %.2f em %s", valor, base, valor * taxaConversao, target);
+    private String criarRegistroConversao(double valor, String base,
+                                          String target, double taxaConversao) {
+        return String.format("Valor: %.2f em %s convertido para %.2f em %s", valor,
+                base, valor * taxaConversao, target);
     }
 
     private void registrarLog(String registro) {
         try {
             log.gerarLog(registro);
         } catch (IOException e) {
+            registrarLog(String.valueOf(e));
             e.printStackTrace();
         }
     }

@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Map;
@@ -12,6 +13,8 @@ public class Main {
         put("JPY", "Iene Japonês");
     }};
 
+    private static Log log = new Log();
+
     public static void main(String[] args) {
         TaxasService taxasService = new TaxasService();
         Scanner leitura = new Scanner(System.in);
@@ -23,7 +26,9 @@ public class Main {
             try{
                 opcao = leitura.nextInt();
             }catch (InputMismatchException e){
-                System.out.println("Opção inválida. Por favor, insira um número.");
+                String mensagemErro = "Opção inválida. Por favor, insira um número.";
+                registrarErro(mensagemErro, e);
+                System.out.println(mensagemErro);
                 leitura.nextLine();
                 continue;
             }
@@ -41,7 +46,9 @@ public class Main {
                 try{
                     valor = leitura.nextDouble();
                 }catch (InputMismatchException e){
-                    System.out.println("Valor inválido");
+                    String mensagemErro = "Valor inválido";
+                    registrarErro(mensagemErro, e);
+                    System.out.println(mensagemErro);
                 }
 
             }
@@ -89,7 +96,9 @@ public class Main {
                 try{
                     valor = leitura.nextDouble();
                 }catch (InputMismatchException e){
-                    System.out.println("Valor inválido");
+                    String mensagemErro = "Valor inválido";
+                    registrarErro(mensagemErro, e);
+                    System.out.println(mensagemErro);
                 }
 
 
@@ -121,5 +130,13 @@ public class Main {
         Taxas taxasMenu = taxasService.conversao(base);
         double valorConvertido = taxasService.converter(base, target, valor, taxasMenu);
         System.out.printf("Valor convertido: %.2f %s%n", valorConvertido, target);
+    }
+
+    public static void registrarErro(String mensagemErro, Exception e){
+        try{
+            log.gerarLog(mensagemErro + " - Detalhes: " + e.getMessage());
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
     }
 }
