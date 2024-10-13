@@ -21,3 +21,6 @@ Valor: 1,00 em BHD convertido para 3478,59 em IQD 2024-10-13 16-16-04
 Histórico gerado 2024-10-13 16-16-06
 Valor: 2,00 em AFN convertido para 11,47 em AMD 2024-10-13 16-17-20
 Histórico gerado 2024-10-13 16-17-21
+Histórico gerado 2024-10-13 16-23-25
+Valor: 100,00 em USD convertido para 38725,54 em AMD 2024-10-13 16-23-35
+Histórico gerado 2024-10-13 16-23-36

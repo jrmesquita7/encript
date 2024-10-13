@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f613c8b7-87b2-4d59-af67-8c253c5c7629" name="Changes" comment="refactor">
-      <change afterPath="$PROJECT_DIR$/src/br/com/jr/conversor/ui/ConversorPainel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2024-10-13-logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2024-10-13-logs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/jr/conversor/ui/ConversorMoedasUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/jr/conversor/ui/ConversorMoedasUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/jr/conversor/ui/ConversorPainel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/jr/conversor/ui/ConversorPainel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

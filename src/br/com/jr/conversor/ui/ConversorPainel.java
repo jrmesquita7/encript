@@ -90,15 +90,23 @@ public class ConversorPainel {
 
         // Ação do botão Histórico
         buttonHistorico.addActionListener(e -> {
-            String historicoConversoes = taxasService.historico();  // Buscar o histórico
-            JTextArea areaTextoHistorico = new JTextArea(historicoConversoes);
-            areaTextoHistorico.setEditable(false);
-            JScrollPane scrollPane = new JScrollPane(areaTextoHistorico);
-            scrollPane.setPreferredSize(new Dimension(500, 400));
-
-            // Exibe o histórico em uma nova janela
-            JOptionPane.showMessageDialog(null, scrollPane, "Histórico de Conversões", JOptionPane.INFORMATION_MESSAGE);
+            abrirJanelaHistorico();  // Método para abrir a nova janela de histórico
         });
+    }
+
+    private void abrirJanelaHistorico() {
+        JFrame janelaHistorico = new JFrame("Histórico de Conversões");
+        janelaHistorico.setSize(400, 300);
+        janelaHistorico.setLocationRelativeTo(null);
+
+        String historicoConversoes = taxasService.historico();
+        JTextArea areaTextoHistorico = new JTextArea(historicoConversoes);
+        areaTextoHistorico.setEditable(false);
+
+        JScrollPane scrollPane = new JScrollPane(areaTextoHistorico);
+        janelaHistorico.add(scrollPane);
+
+        janelaHistorico.setVisible(true);
     }
 
     public JPanel getPainelPrincipal() {
