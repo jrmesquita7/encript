@@ -172,7 +172,7 @@ Valor: 100,00 em BRL convertido para 16,38 em EUR 2024-10-12 11-24-57
 Histórico gerado 2024-10-12 11-25-18
 ```
 
-Para uma experiência diferente no diretóro root/ui/ a class ConversorMoedasUI
+Para uma experiência diferente no diretório root/ui/ a class ConversorMoedasUI
 trás uma interface grafica para melhor funcionamento
 Essas foram as bibliotecas utilizadas 
 
